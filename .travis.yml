@@ -6,7 +6,7 @@ script:
 
 deploy:
   provider: lambda
-  region: "eu_central-1"
+  region: "eu-central-1"
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   function_name: "DreamBroker-AnalyzeText"
