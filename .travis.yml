@@ -10,4 +10,6 @@ deploy:
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   function_name: "DreamBroker-AnalyzeText"
   runtime: "python3.7"
+  on:
+    branch: main
   edge: true # opt in to dpl v2..
