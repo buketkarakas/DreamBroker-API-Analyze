@@ -6,10 +6,9 @@ script:
 
 deploy:
   provider: lambda
-  access_key_id: $AWS_ACCESS_KEY_ID
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  region: "eu-central-1"
   function_name: "DreamBroker-AnalyzeText"
   runtime: "python3.7"
-  on:
-    branch: main
-  edge: true # opt in to dpl v2..
+  role: "arn:aws:iam::981321371788:role/service-role/DreamBroker-AnalyzeText-role-nq32qasd" 
+  handler_name: "lambda_handler"
+ 
