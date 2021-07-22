@@ -11,4 +11,5 @@ deploy:
   runtime: "python3.7"
   role: "arn:aws:iam::981321371788:role/service-role/DreamBroker-AnalyzeText-role-nq32qasd" 
   handler_name: "lambda_handler"
+  on: all_branches: true
  
