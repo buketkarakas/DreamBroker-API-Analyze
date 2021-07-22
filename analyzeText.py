@@ -43,6 +43,8 @@ def lambda_handler(event, context):
     word_count = count_words(text)
     character_count = count_characters(text)
 
+    #DEPLOYMENT TEST !!!!!!
+
     return {
         "textLength":text_length,
         "wordCount": word_count,
