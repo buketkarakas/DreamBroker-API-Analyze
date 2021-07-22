@@ -12,7 +12,7 @@ deploy:
   function_name: "DreamBroker-AnalyzeText"
   runtime: "python3.7"
   handler_name: "lambda_handler"
-  zip: ".\\analyzeText.py"
+  zip: "analyzeText.py"
   role: "arn:aws:iam::981321371788:role/service-role/DreamBroker-AnalyzeText-role-nq32qasd"
   on:
     branch: main
