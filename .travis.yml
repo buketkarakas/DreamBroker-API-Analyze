@@ -1,6 +1,9 @@
+language: python
+python: -"3.9"
 deploy:
   provider: lambda
   access_key_id: <encrypted access_key_id>
   secret_access_key: <encrypted secret_access_key>
   function_name: "DreamBroker-AnalyzeText"
-  edge: true # opt in to dpl v2
+  runtime: "python3.7"
+  edge: true # opt in to dpl v2..
