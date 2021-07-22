@@ -24,7 +24,7 @@ def count_characters(txt):
 
     for letter in english_alphabet:
         if letter in adjusted_txt:
-            num_of_occurence = txt.count(letter)
+            num_of_occurence = adjusted_txt.count(letter)
             result.append({letter: num_of_occurence})
     
     #print("Result array for chars:", result) #DEBUG
@@ -49,7 +49,4 @@ def lambda_handler(event, context):
         "characterCount": character_count
     }
 
-event = {
-    "text": "hello 2 times  "
-}
-print(lambda_handler(event=event, context=None))
+print(count_characters("Hello my friend!!!!!!"))
